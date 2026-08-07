@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color-scheme: dark;
+  background: #06100c;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(84,255,145,.07), transparent 35%),
+    #06100c;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .28;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: linear-gradient(to bottom, black, transparent 70%);
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-neon px-5 py-3.5 font-bold text-[#06100c] shadow-[0_0_30px_rgba(84,255,145,.12)] transition hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(84,255,145,.22)] focus:outline-none focus:ring-2 focus:ring-neon/50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-3.5 font-semibold text-white transition hover:bg-white/[0.07] focus:outline-none focus:ring-2 focus:ring-white/20;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3.5 text-sm text-white outline-none placeholder:text-slate-700 focus:border-neon/40 focus:ring-2 focus:ring-neon/10;
+  }
+
+  .input-icon {
+    @apply pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-600;
+  }
+}
+
+::selection { background: rgba(84,255,145,.25); color: white; }
