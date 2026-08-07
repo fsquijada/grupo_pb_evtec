@@ -1,6 +1,6 @@
 # EVALUACIÓN TÉCNICA GRUPO PB
 
-`Enlace público:` https://d3ac1wp9stitih.cloudfront.net/
+`Enlace público:`  [LINK DE ACCESO](https://d3ac1wp9stitih.cloudfront.net/) 👈
 
 ## Tabla de Contenidos
 
@@ -24,10 +24,6 @@
   - [Observabilidad](#observabilidad)
 - [Ejecución Local)](#ejecución-local)
   - [Requisitos](#requisitos)
-
-
-
-
 
 ## Introducción
 
@@ -213,9 +209,6 @@ Los archivos generados (carpeta dist) estarán disponibles en el directorio de d
 
 [Frontend](../frontend)
 [Server](../server)
-
-
-
 
 
 
